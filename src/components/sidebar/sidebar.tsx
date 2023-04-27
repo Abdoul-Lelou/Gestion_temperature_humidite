@@ -3,7 +3,6 @@ import { styled, useTheme, Theme, CSSObject } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
@@ -12,13 +11,10 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { Route, Routes, Navigate, useNavigate, useLocation  } from 'react-router-dom';
+import { Route, Routes, useNavigate, useLocation  } from 'react-router-dom';
 import Dashboard from '../../pages/dashboard/dashboard';
 import Profile from '../../pages/profile/profile';
 import User from '../../pages/tableau/datatable';
@@ -27,7 +23,7 @@ import MoyTempHum from '../../pages/moytemphum/moytemphum';
 import Login from '../../pages/login/login';
 import BadgeAvatars from '../accordion/accordionProfile';
 import HistoryOutlinedIcon from '@mui/icons-material/HistoryOutlined';
-import { DeviceThermostatOutlined, HomeMiniRounded, HomeOutlined } from '@mui/icons-material';
+import { DeviceThermostatOutlined, HomeOutlined } from '@mui/icons-material';
 import Groups2Outlined from '@mui/icons-material/Groups2Outlined';
 import { Menu, MenuItem } from '@mui/material';
 import ExitToAppOutlined from '@mui/icons-material/ExitToAppOutlined';
@@ -127,7 +123,7 @@ export default function MiniDrawer() {
 
     let tokenState = localStorage.getItem('token');
     let setshowSidebar= true;
-    if(pathname.split('/').join('') =="" || pathname.split('/').join('') =="login" || !tokenState){
+    if(pathname.split('/').join('') ==="" || pathname.split('/').join('') ==="login" || !tokenState){
       setshowSidebar = false;
     }else{
       setshowSidebar = true;

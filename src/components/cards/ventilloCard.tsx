@@ -1,18 +1,13 @@
 import * as React from 'react'
-import { useTheme } from '@mui/material/styles'
 import Card from '@mui/material/Card'
 import CardMedia from '@mui/material/CardMedia'
 import IconButton from '@mui/material/IconButton'
 import PowerSettingsNewOutlinedIcon from '@mui/icons-material/PowerSettingsNewOutlined'
 //import {io}from 'socket.io-client';
 
-import { Button, CardActions, CardContent, Typography } from '@mui/material'
+import { CardActions } from '@mui/material'
 
 import {
-  DeviceHub,
-  HomeRepairServiceOutlined,
-  PlayCircle,
-  PlayCircleFilledSharp,
   StopCircleSharp,
 } from '@mui/icons-material'
 import { dbRealtime } from '../../firebaseConfig'

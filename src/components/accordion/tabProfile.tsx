@@ -1,16 +1,9 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 // import ControlledAccordions from '../../components/user_Profile/info_user';
-import InfoIcon from '@mui/icons-material/Info';
 // import EditAccordions from '../../components/user_Profile/edit_userProfile';
-import LockResetIcon from '@mui/icons-material/LockReset';
-import FolderSharedRoundedIcon from '@mui/icons-material/FolderSharedRounded';
-import ControlledAccordions from './accordionProfile';
-import SimpleAccordion from './accordionProfile';
 import BadgeAvatars from './accordionProfile';
 
 function TabPanel({...props}) {
